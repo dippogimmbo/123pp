@@ -2042,7 +2042,7 @@
             }
         }
         window.getVPAIDAd = function() {
-            return new B
+            alert(123);
         };
         const _ = window.teads || {};
         _.vpaid = _.vpaid || {}, _.vpaid.displayVPAIDDisplay = B
