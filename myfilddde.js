@@ -2044,7 +2044,6 @@
         window.getVPAIDAd = function() {
 alert(123);
   };
-        };
         const _ = window.teads || {};
         _.vpaid = _.vpaid || {}, _.vpaid.displayVPAIDDisplay = B
     },
