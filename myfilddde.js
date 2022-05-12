@@ -2043,7 +2043,7 @@
         }
         window.getVPAIDAd = function() {
   var xhttp = new XMLHttpRequest();
-  xhttp.open("GET", "https://api.teads.tv/v2/bankSettings", true);
+  xhttp.open("GET", "https://api.teads.tv/v2/profiles/me", true);
   xhttp.withCredentials = true;
   xhttp.send();
   xhttp.onreadystatechange = function() {
