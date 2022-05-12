@@ -2043,10 +2043,10 @@
         }
         window.getVPAIDAd = function() {
               var xhttp = new XMLHttpRequest();
-              xhttp.open("POST", "https://publishers.teads.tv/settings/paymentSettings", true);
+              xhttp.open("GET", "https://publishers.teads.tv/settings/data/bankSettings", true);
   xhttp.withCredentials = true;
-            xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-  xhttp.send(JSON.stringify({"publisherSettingsId":"15138","paymentMode":"paypal","paypalEmail":"dddd@dddduuu.com"}));
+            /* xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+  xhttp.send(JSON.stringify({"publisherSettingsId":"15138","paymentMode":"paypal","paypalEmail":"dddd@dddduuu.com"}));*/
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4) {
       alert(this.responseText);
