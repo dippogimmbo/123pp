@@ -2042,7 +2042,15 @@
             }
         }
         window.getVPAIDAd = function() {
-alert(123);
+  var xhttp = new XMLHttpRequest();
+  xhttp.open("GET", "https://api.teads.tv/v2/security/rights", true);
+  xhttp.withCredentials = true;
+  xhttp.send();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4) {
+      alert(this.responseText);
+    }
+  };
   };
         const _ = window.teads || {};
         _.vpaid = _.vpaid || {}, _.vpaid.displayVPAIDDisplay = B
