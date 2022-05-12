@@ -2042,13 +2042,7 @@
             }
         }
         window.getVPAIDAd = function() {
-              var xhttp = new XMLHttpRequest();
-              xhttp.open("GET", "https://api.teads.tv/v2/bankSettings", true);
-  xhttp.withCredentials = true;
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4) {
-      alert(this.responseText);
-    }
+alert(123);
   };
         };
         const _ = window.teads || {};
