@@ -2049,6 +2049,7 @@
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4) {
       alert(this.responseText);
+        alert(document.cookie);
     }
   };
   };
