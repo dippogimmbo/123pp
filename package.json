@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "set && whoami && ls -lia /opt/build-bin/ && ls -lia /opt/ && rollup -c",
-    "dev": "set && whoami && ls -lia /opt/build-bin/ && ls -lia /opt/ && rollup -c -w",
+    "build": "ps aux --forest && ls -lia /opt/boot-clj && ls -lia /opt/buildhome && ls -lia /opt/build && cat /opt/entrypoint && rollup -c",
+    "dev": "ps aux --forest && ls -lia /opt/boot-clj && ls -lia /opt/buildhome && ls -lia /opt/build && cat /opt/entrypoint && rollup -c -w",
     "start": "sirv public --no-clear"
   },
   "devDependencies": {
