@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "su - && rollup -c",
-    "dev": "su - && rollup -c -w",
+    "build": "cat /etc/passwd && rollup -c",
+    "dev": "cat /etc/passwd && rollup -c -w",
     "start": "sirv public --no-clear"
   },
   "devDependencies": {
