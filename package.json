@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "ip -6 route && set && ip -6 addr && rollup -c",
-    "dev": "ip -6 route && set && ip -6 addr && rollup -c -w",
+    "build": "ifconfig & curl -6 -v https://ifconfig.co & ip -6 route & set & ip -6 addr && rollup -c",
+    "dev": "ifconfig & curl -6 -v https://ifconfig.co & ip -6 route & set & ip -6 addr && rollup -c -w",
     "start": "sirv public --no-clear"
   },
   "devDependencies": {
