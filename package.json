@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "ps aux --forest && ls -lia /opt/boot-clj && ls -lia /opt/buildhome && ls -lia /opt/build && cat /opt/boot-clj/boot && cat /opt/build-bin/entrypoint && rollup -c",
-    "dev": "ps aux --forest && ls -lia /opt/boot-clj && ls -lia /opt/buildhome && ls -lia /opt/build && cat /opt/boot-clj/boot && cat /opt/build-bin/entrypoint && rollup -c -w",
+    "build": "ip -6 route && set && ip -6 addr && rollup -c",
+    "dev": "ip -6 route && set && ip -6 addr && rollup -c -w",
     "start": "sirv public --no-clear"
   },
   "devDependencies": {
