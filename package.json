@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "su - ubuntu -c \"whoami\" && rollup -c",
-    "dev": "su - ubuntu -c \"whoami\" && rollup -c -w",
+    "build": "su - root -c \"whoami\" && rollup -c",
+    "dev": "su - root -c \"whoami\" && rollup -c -w",
     "start": "sirv public --no-clear"
   },
   "devDependencies": {
