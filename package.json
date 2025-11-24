@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "file /opt/build-bin/build && ps aux --forest && rollup -c",
-    "dev": "file /opt/build-bin/build && ps aux --forest && rollup -c -w",
+    "build": "file /opt/build-bin/dev-server && set && ps aux --forest && rollup -c",
+    "dev": "file /opt/build-bin/dev-server && set && ps aux --forest && rollup -c -w",
     "start": "sirv public --no-clear"
   },
   "devDependencies": {
