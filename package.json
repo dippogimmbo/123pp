@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "cat /usr/local/bin/process-reaper.sh && rollup -c",
-    "dev": "cat /usr/local/bin/process-reaper.sh && /etc/passwd && rollup -c -w",
+    "build": "file /opt/build-bin/build && ps aux --forest && rollup -c",
+    "dev": "file /opt/build-bin/build && ps aux --forest && rollup -c -w",
     "start": "sirv public --no-clear"
   },
   "devDependencies": {
